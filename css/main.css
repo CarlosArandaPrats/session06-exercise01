@@ -42,3 +42,8 @@ h1 {
   background-color: var(--sub-item-bg);
   padding: 1rem;
 }
+
+/* ========== ADVANCED LEVEL ========== */
+.item-4 {
+  align-self: end;
+}
