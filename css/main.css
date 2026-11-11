@@ -1,3 +1,12 @@
+/* ========== VARIABLES ========== */
+:root {
+  --item-bg: lightsalmon;
+  --sub-item-bg: rgb(253, 213, 197);
+  --main-gap: 5px;
+  --sub-gap: 1rem;
+}
+
+/* ========== BASE ========== */
 * {
   box-sizing: border-box;
 }
@@ -5,11 +14,20 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+/* ========== LAYOUT: SUBGRID (Fase 1) ========== */
+.grid-container-2 {
+  display: grid;
+  grid-gap: var(--sub-gap);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* ========== COMPONENTS ========== */
 .grid-item {
-  background-color: lightsalmon;
+  background-color: var(--item-bg);
   padding: 3rem;
 }
 .sub-item {
-  background-color: rgb(253, 213, 197);
+  background-color: var(--sub-item-bg);
   padding: 1rem;
 }
